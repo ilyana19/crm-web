@@ -5,13 +5,20 @@ get '/' do
   erb :index
 end
 
+get '/contacts' do
+  @contacts = Contact.all
+  erb :contacts
+end
+
+get '/about' do
+  erb :about
+end
 
 
 
-
-
-
-
+at_exit do
+  ActiveRecord::Base.connection.close
+end
 
 
 # require_relative 'contact'
