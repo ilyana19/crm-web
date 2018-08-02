@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CRM: But Really it's a list of character profiles from Evillious Chronicles.</title>
-  </head>
-  <body>
-    <header>
-      <h1>Contacts</h1>
-
-      <nav id="main_nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="#contact-section">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="contact-section" class="contacts">
-        <% @contacts.each do |contact| %>
-          <ul>
-              <li><%= contact.full_name %></li>
-              <li><%= contact.email %></li>
-              <li><%= contact.note %></li>
-          </ul>
-        <% end %>
-      </section>
-    </main>
-  </body>
-</html>
+<section id="contact-section" class="contacts">
+  <% @contacts.each do |contact| %>
+    <ul>
+        <li><%= contact.full_name %></li>
+        <li><%= contact.email %></li>
+        <li><%= contact.note %></li>
+    </ul>
+  <% end %>
+</section>
