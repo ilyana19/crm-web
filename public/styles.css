@@ -68,8 +68,12 @@ footer {
 
 .contact-wrapper {
   padding: 1.2em 1em;
-  margin: 0.5em auto;
+  margin: 1em auto;
   background: #c6f9f4;
+}
+
+.contact-wrapper:hover {
+  background: #ecfbfa;
 }
 
 .contact-header {
@@ -77,15 +81,17 @@ footer {
   background: #fb5e5e;
 }
 
-.contact-wrapper h2 {
+.contact-name {
   font-size: 1.2em;
   padding: 0;
 }
 
-.contact-wrapper p {
-  margin: 0.5em auto;
-  padding: 0;
-  color: #666;
+.contact-name a, .contact-name a:visited {
+  color: #333;
+}
+
+.contact-name a:hover, .contact-name a:focus {
+  color: #ff9900;
 }
 
 .contact-actions li {
@@ -94,5 +100,36 @@ footer {
 }
 
 .contact-actions a {
-  color: #333;
+  color: #229ceb;
+}
+
+.contact-actions a:hover {
+  color: #9ad5fb;
+}
+
+.contact-info {
+  padding: 1.2em 1em;
+  margin: 1em auto;
+  background: #c6f9f4;
+}
+
+.contact-info h1 {
+  padding: 2px 0;
+  font-size: 1.8em;
+  border-bottom: 5px solid black;
+}
+
+.contact-info h2 {
+  font-family: 'Lato', sans-serif;
+  color: #666;
+  font-size: 1.2em;
+  padding: 0;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.contact-info p {
+  margin: 0.5em auto;
+  padding: 0;
+  color: #666;
 }
