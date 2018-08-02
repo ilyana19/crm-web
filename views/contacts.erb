@@ -2,14 +2,10 @@
   <p class="contact-header">There are a total of <%= @contacts.count %> contacts.</p>
 
   <% @contacts.each do |contact| %>
-    <!-- <ul>
-        <li><%= contact.full_name %></li>
-        <li><%= contact.email %></li>
-        <li><%= contact.note %></li>
-    </ul> -->
     <section class="contact-wrapper">
-      <h2 class="contact-name"><%= contact.full_name %> (<%= contact.email %>)</h2>
-      <p class="contact-note"><%= contact.note %></p>
+      <h2 class="contact-name">
+        <a href="/contacts/<%= contact.id %>"><%= contact.full_name %> (<%= contact.email %>)</a>
+      </h2>
 
       <ul class="contact-actions">
         <li><a href="#">Edit</a></li> |

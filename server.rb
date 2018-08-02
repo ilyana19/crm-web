@@ -15,6 +15,17 @@ get '/contacts' do
   erb :contacts
 end
 
+get '/contacts/:id' do
+  # params[:id] contains the id from the URL
+  @contact = Contact.find_by({id: params[:id].to_i})
+
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
+end
+
 get '/add-contact' do
   erb :add_contact
 end
