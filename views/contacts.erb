@@ -1,9 +1,20 @@
-<section id="contact-section" class="contacts">
+<section class="contacts">
+  <p class="contact-header">There are a total of <%= @contacts.count %> contacts.</p>
+
   <% @contacts.each do |contact| %>
-    <ul>
+    <!-- <ul>
         <li><%= contact.full_name %></li>
         <li><%= contact.email %></li>
         <li><%= contact.note %></li>
-    </ul>
+    </ul> -->
+    <section class="contact-wrapper">
+      <h2 class="contact-name"><%= contact.full_name %> (<%= contact.email %>)</h2>
+      <p class="contact-note"><%= contact.note %></p>
+
+      <ul class="contact-actions">
+        <li><a href="#">Edit</a></li> |
+        <li><a href="#">Delete</a></li>
+      </ul>
+    </section>
   <% end %>
 </section>

@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>CRM: But Really it's a list of character profiles from Evillious Chronicles.</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:700" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Evillious Chronicles CRM (*cough*)</h1>
+      <h1><a href="/">Evillious Chronicles CRM (*cough*)</a></h1>
 
       <nav id="main_nav">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/contacts">View Contacts</a></li>
+          <li><a href="/add-contact">Add a Contact</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -21,5 +23,9 @@
     <main>
       <%= yield %>
     </main>
+
+    <footer>
+      &copy; Evillious Chronicles 2018
+    </footer>
   </body>
 </html>

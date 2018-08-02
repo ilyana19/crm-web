@@ -1,0 +1,98 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 1em 0;
+}
+
+p {
+  margin: 1em auto;
+  padding: 0 1em;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+header, footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  font-size: 1.6em;
+  color: #333;
+}
+
+footer {
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+.links, .links:visited {
+  color: #ff8404;
+}
+
+.links:hover {
+  color: #ffc004;
+}
+
+#main_nav {
+  background: #a9b1a1;
+}
+
+#main_nav li {
+  padding: 1em 0;
+  border-bottom: 1px solid #fff;
+}
+
+#main_nav li a {
+  color: #fff;
+  font-size: 1.8em;
+}
+
+.contacts {
+  margin: 0.5em auto;
+}
+
+.contact-wrapper {
+  padding: 1.2em 1em;
+  margin: 0.5em auto;
+  background: #c6f9f4;
+}
+
+.contact-header {
+  padding: 1em;
+  background: #fb5e5e;
+}
+
+.contact-wrapper h2 {
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.contact-wrapper p {
+  margin: 0.5em auto;
+  padding: 0;
+  color: #666;
+}
+
+.contact-actions li {
+  display: inline-block;
+  margin: 0.5em auto;
+}
+
+.contact-actions a {
+  color: #333;
+}
