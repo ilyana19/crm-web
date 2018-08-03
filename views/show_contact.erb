@@ -2,12 +2,17 @@
   <h1 class="headers"><%= @contact.full_name %></h1>
   <h2><%= @contact.email %></h2>
 
-  <p><%= @contact.note %></p>
+  <div class="description-wrapper">
+    <h2>Contact Description</h2>
+    <p><%= @contact.note %></p>
+  </div>
 
-  <a class="links" href="/contacts/<%= @contact.id %>/edit">Edit</a>
+  <section class="contact-actions">
+    <a class="default-button" href="/contacts/<%= @contact.id %>/edit">Edit</a>
 
-  <form action="/contacts/<%= @contact.id %>" method="post">
-    <input type='hidden' name='_method' value='delete'>
-    <input type='submit' value='Delete Contact'>
-  </form>
+    <form action="/contacts/<%= @contact.id %>" method="post">
+      <input type='hidden' name='_method' value='delete'>
+      <input class="default-button" type='submit' value='Delete'>
+    </form>
+  </section>
 </section>
