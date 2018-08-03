@@ -5,18 +5,15 @@ body {
   color: #333;
 }
 
+img {
+  width: 100%;
+}
+
 h1, h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 2em;
   padding: 1em 0;
-}
-
-p {
-  margin: 1em auto;
-  padding: 0 1em;
-  font-size: 1.2em;
-  line-height: 1.3em;
 }
 
 a, a:visited {
@@ -25,7 +22,7 @@ a, a:visited {
 }
 
 header, footer {
-  background: #000;
+  background: #4f3c20;
   color: #fff;
   text-align: center;
 }
@@ -37,7 +34,7 @@ main {
 
 footer {
   padding: 1em 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .links, .links:visited {
@@ -48,37 +45,60 @@ footer {
   color: #ffc004;
 }
 
+.logo {
+  max-width: 360px;
+}
+
 #main_nav {
-  background: #a9b1a1;
+  background: #f1db9c;
 }
 
 #main_nav li {
   padding: 1em 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #4e3d20;
+}
+
+#main_nav li:last-child {
+  border: none;
 }
 
 #main_nav li a {
-  color: #fff;
+  color: #4e3d20;
   font-size: 1.8em;
 }
 
+#main_nav li a:hover {
+  color: #ff8404;
+}
+
+.welcome p, .about p {
+  margin: 1em auto;
+  padding: 0 1em;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
 .contacts {
-  margin: 0.5em auto;
 }
 
 .contact-wrapper {
   padding: 1.2em 1em;
-  margin: 1em auto;
-  background: #c6f9f4;
+  margin: 0 auto 1em;
+  background: #ecfbfa;
+}
+
+.contact-wrapper:last-child {
+  margin: 0 auto;
 }
 
 .contact-wrapper:hover {
-  background: #ecfbfa;
+  background: #fbfbec;
 }
 
 .contact-header {
   padding: 1em;
-  background: #fb5e5e;
+  background: #614600;
+  color: #fff;
 }
 
 .contact-name {
@@ -109,14 +129,13 @@ footer {
 
 .contact-info {
   padding: 1.2em 1em;
-  margin: 1em auto;
-  background: #c6f9f4;
+  background: #ecfbfa;
 }
 
 .contact-info h1 {
-  padding: 2px 0;
+  padding: 5px 0;
   font-size: 1.8em;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #614600;
 }
 
 .contact-info h2 {
@@ -124,7 +143,7 @@ footer {
   color: #666;
   font-size: 1.2em;
   padding: 0;
-  line-height: 1.4em;
+  line-height: 1.6em;
   font-weight: 400;
 }
 

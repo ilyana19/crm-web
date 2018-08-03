@@ -15,6 +15,10 @@ get '/contacts' do
   erb :contacts
 end
 
+get '/contacts/add-contact' do
+  erb :add_contact
+end
+
 get '/contacts/:id' do
   # params[:id] contains the id from the URL
   @contact = Contact.find_by({id: params[:id].to_i})
@@ -26,8 +30,14 @@ get '/contacts/:id' do
   end
 end
 
-get '/add-contact' do
-  erb :add_contact
+post '/contacts' do
+  Contact.create(
+    first_name: params[:first_name],
+    last_name: params[:last_name],
+    email: params[:email],
+    note: params[:note]
+  )
+  redirect to('/contacts')
 end
 
 get '/about' do
