@@ -3,4 +3,9 @@
   <h2><%= @contact.email %></h2>
 
   <p><%= @contact.note %></p>
+
+  <form action="/contacts/<%= @contact.id %>" method="post">
+    <input type='hidden' name='_method' value='delete'>
+    <input type='submit' value='Delete Contact'>
+  </form>
 </section>
