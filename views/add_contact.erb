@@ -1,9 +1,27 @@
 <section class="add-contact">
-  <form action='/contacts' method='post'>
-    <input type='text' name='first_name'>
-    <input type='text' name='last_name'>
-    <input type='text' name='email'>
-    <input type='text' name='note'>
-    <input type='submit' value='New Contact'>
+  <h1 class="headers">Add a new contact</h1>
+
+  <form class="add-contact-form" action='/contacts' method='post'>
+    <div class="field-wrapper">
+      <label for="firstname">First Name</label>
+      <input id="firstname" type='text' name='first_name' placeholder="First Name" required>
+    </div>
+
+    <div class="field-wrapper">
+      <label for="lastname">Last Name</label>
+      <input id="lastname" type='text' name='last_name' placeholder="Last Name" required>
+    </div>
+
+    <div class="field-wrapper">
+      <label for="email">Email Address</label>
+      <input id="email" type='text' name='email' placeholder="Email Address" required>
+    </div>
+
+    <div class="field-wrapper">
+      <label for="notes">Notes (optional)</label>
+      <textarea id="notes" name="note" rows="8" cols="20"></textarea>
+    </div>
+
+    <button class="default-button" type="submit">Add Contact</button>
   </form>
 </section>

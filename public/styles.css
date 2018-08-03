@@ -49,6 +49,14 @@ footer {
   max-width: 360px;
 }
 
+.headers {
+  padding: 5px 0;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #614600;
+}
+
 #main_nav {
   background: #f1db9c;
 }
@@ -132,12 +140,6 @@ footer {
   background: #ecfbfa;
 }
 
-.contact-info h1 {
-  padding: 5px 0;
-  font-size: 1.8em;
-  border-bottom: 5px solid #614600;
-}
-
 .contact-info h2 {
   font-family: 'Lato', sans-serif;
   color: #666;
@@ -151,4 +153,65 @@ footer {
   margin: 0.5em auto;
   padding: 0;
   color: #666;
+}
+
+.add-contact {
+  padding: 1.2em 1em;
+  margin: 0 auto 1em;
+}
+
+.add-contact-form {
+  margin: 1em auto;
+  padding: 1em 0;
+}
+
+.field-wrapper {
+  margin: 1em auto;
+}
+
+.field-wrapper label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.field-wrapper input {
+  height: 25px;
+}
+
+.field-wrapper label, .field-wrapper input, .field-wrapper textarea {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+}
+
+.default-button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.default-button:hover,
+.default-button:focus {
+  background: #0053ba;
+}
+
+.default-button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.default-button:active {
+  transform: scale(0.99);
 }
