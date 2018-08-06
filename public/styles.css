@@ -268,3 +268,9 @@ footer {
   position: absolute;
   right: 0;
 }
+
+@media screen and (min-width: 420px) {
+  .add-contact-form, .edit-contact-form {
+    max-width: 360px;
+  }
+}
