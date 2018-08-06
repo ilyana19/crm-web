@@ -227,16 +227,16 @@ footer {
   text-align: center;
 }
 
-.add-contact {
+.add-contact, .edit-contact {
   padding: 1.2em 1em;
   margin: 0 auto 1em;
 }
 
-.add-contact .headers {
+.add-contact .headers, .edit-contact .headers {
   font-size: 1.6em;
 }
 
-.add-contact-form {
+.add-contact-form, .edit-contact-form {
   margin: 1em auto;
   padding: 1em 0;
   position: relative;
